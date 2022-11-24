@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front End</title>
+    <link href="index.cs" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <button id="getTasks">Get Tasks</button>
+    <button id="createTask">Create Task</button>
+    <buttom id="deleteTask">Delete Task</buttom>
+    <form id="create-task">
+      <label>Usernames:</label><br />
+      <input
+        type="text"
+        id="usernames"
+        name="usernames"
+        placeholder="John"
+      /><br />
+
+      <label>Tags:</label><br />
+      <input type="text" id="tags" name="tags" placeholder="IT" /><br /><br />
+
+      <label>Done:</label><br />
+      <input
+        type="text"
+        id="done"
+        name="done"
+        placeholder="false"
+      /><br /><br />
+
+      <label>Deadline:</label><br />
+      <input
+        type="text"
+        id="deadline"
+        name="deadline"
+        placeholder="30.11.22"
+      /><br /><br />
+
+      <label>Author:</label><br />
+      <input
+        type="text"
+        id="author"
+        name="author"
+        placeholder="John"
+      /><br /><br />
+
+      <button type="submit" value="Submit">Create Task</button>
+    </form>
+    <form id="delete-task">
+      <label>Id:</label><br />
+      <input type="text" id="id" name="id" placeholder="John" /><br />
+
+      <button type="submit" value="Submit">Delete Task</button>
+    </form>
+    <script type="module" src="./index.gs"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+  </body>
+</html>

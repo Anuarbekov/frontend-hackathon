@@ -1,0 +1,6 @@
+.task {
+  padding-bottom: 50px;
+}
+#create-task, #delete-task{
+  display: none;
+}
